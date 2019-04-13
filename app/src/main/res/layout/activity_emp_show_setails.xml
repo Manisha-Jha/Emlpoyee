@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/color_dul"
+    android:layout_height="match_parent"
+    tools:context=".EmpShowSetails">
+
+
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:id="@+id/topPanel"
+         android:layout_height="wrap_content">
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:text="Name"
+             android:id="@+id/emp_name"
+             android:textColor="@color/color_black"
+             android:textSize="40sp"
+             android:layout_centerVertical="true"
+             android:layout_marginLeft="10dp"
+             android:textStyle="bold"
+             android:textAlignment="center"
+             android:layout_height="wrap_content" />
+
+         <ImageView
+             android:layout_width="200dp"
+             android:layout_marginTop="10dp"
+             android:id="@+id/emp_img"
+             android:layout_marginRight="10dp"
+             android:layout_alignParentRight="true"
+             android:layout_height="230dp" />
+
+     </RelativeLayout>
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_below="@+id/topPanel"
+         android:layout_height="match_parent">
+
+       <FrameLayout
+           android:layout_width="match_parent"
+           android:id="@+id/second_panel"
+           android:layout_height="80dp">
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:orientation="horizontal"
+             android:weightSum="3"
+             android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+                 <RelativeLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent">
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:text="GEN : "
+                     android:layout_marginLeft="5dp"
+                     android:textSize="14sp"
+                     android:id="@+id/label_gen"
+                     android:layout_centerVertical="true"
+                     android:layout_height="wrap_content" />
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_toEndOf="@id/label_gen"
+                     android:textSize="14sp"
+                     android:layout_centerVertical="true"
+                     android:id="@+id/emp_gen"
+                     android:layout_height="wrap_content" />
+                 </RelativeLayout>
+            </LinearLayout>
+
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_weight="1.3"
+                 android:layout_height="match_parent">
+
+
+                 <RelativeLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent">
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:text="AGE"
+                         android:layout_marginTop="5dp"
+                         android:layout_centerHorizontal="true"
+                         android:textSize="14sp"
+                         android:layout_height="wrap_content" />
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:textSize="14sp"
+                         android:layout_centerHorizontal="true"
+                         android:layout_centerVertical="true"
+                         android:id="@+id/emp_age"
+                         android:layout_height="wrap_content" />
+                 </RelativeLayout>
+
+
+             </LinearLayout>
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_weight="0.7"
+                 android:layout_height="match_parent">
+
+                 <RelativeLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent">
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:text="Designation"
+                         android:layout_marginTop="5dp"
+                         android:layout_centerHorizontal="true"
+                         android:textSize="14sp"
+                         android:layout_height="wrap_content" />
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:textSize="14sp"
+                         android:layout_centerHorizontal="true"
+                         android:layout_centerVertical="true"
+                         android:id="@+id/emp_des"
+                         android:layout_height="wrap_content" />
+                 </RelativeLayout>
+
+             </LinearLayout>
+         </LinearLayout>
+
+       </FrameLayout>
+
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_below="@+id/second_panel"
+             android:layout_height="match_parent">
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:text="Leave : "
+                  android:layout_marginTop="10dp"
+                  android:layout_marginLeft="10dp"
+                  android:id="@+id/leave_lable"
+                  android:layout_height="wrap_content" />
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:id="@+id/emp_leave"
+                  android:layout_marginTop="10dp"
+                  android:layout_toEndOf="@+id/leave_lable"
+                  android:layout_height="wrap_content" />
+
+              <FrameLayout
+                  android:layout_width="wrap_content"
+                  android:layout_alignParentRight="true"
+                  android:layout_marginRight="30dp"
+                  android:background="@color/color_green"
+                  android:layout_height="40dp">
+                  <RelativeLayout
+                      android:layout_width="wrap_content"
+                      android:clickable="true"
+                      android:padding="5dp"
+                      android:id="@+id/demand_leave"
+                      android:background="?android:attr/selectableItemBackground"
+                      android:layout_height="match_parent">
+
+                      <TextView
+                          android:layout_width="wrap_content"
+                          android:text="Demand Leave"
+                          android:textSize="16sp"
+                          android:textStyle="bold"
+                          android:layout_centerInParent="true"
+                          android:layout_height="wrap_content" />
+
+                  </RelativeLayout>
+              </FrameLayout>
+
+
+         </RelativeLayout>
+
+
+     </RelativeLayout>
+
+
+</RelativeLayout>
